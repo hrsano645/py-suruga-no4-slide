@@ -6,5 +6,9 @@ theme : sky
 logo : pysuruga-logo.png
 
 
+#フットノートの設定
+footnote : "[WIP][WIP]"
+
+
 #スライドのページ数表示の設定
 slide-number: true
