@@ -147,10 +147,10 @@
 
 ---
 
-#### おまけ:VS Codeでおすすめの拡張機能
+#### おまけ:VSCodeでおすすめの拡張機能
 
 
-- Python for VSCode: **必ず入れるべき** 
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python): **必ず入れるべき** 
     - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる（テスト, 静的解析, 自動フォーマットのライブラリもサポート）
 
 ---
@@ -165,21 +165,24 @@
 
 ---
 
-#### Python for VS Codeで使うとオススメなライブラリ
+#### Python拡張で使うとオススメなライブラリ
 
-Pythonのコードを扱う時間が増えてきたらオススメなライブラリ
+Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeでサポートされてます。
 
-- flake8: 静的メトリクス
-- autopep8(自動フォーマット): black, yapf
-- mypy: 型チェック
-- isort: importの並びを綺麗にする
+- [リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
+- [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
+- 型チェック: mypy
+- そのほか
+    - isort: importの並びを綺麗にする -> [vscodeでの解説](https://code.visualstudio.com/docs/python/editing#_sort-imports)
+
+参考:[Python 3.7とVisual Studio Codeで型チェックが捗る内作Pythonアプリケーション開発環境の構築 - Qiita](https://qiita.com/shibukawa/items/1650724daf117fad6ccd#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AE%E6%84%8F%E5%91%B3)
 
 ---
 
 #### まとめ
 
-- 試す環境:CUIとか
-- 書く環境:エディタ IDE
+- 試す環境:CUIで動かす
+- 書く環境:エディタ IDEでスクリプトを書こう
 
 ---
 
