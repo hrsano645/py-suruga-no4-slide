@@ -1,14 +1,14 @@
-### Python駿河 勉強会 #4 
+#### Python駿河 勉強会 #4 
 
-#### 〜Python初心者に寄ってたかって教えよう！〜
+##### 〜Python初心者に寄ってたかって教えよう！〜
 
-##### 2019/08/24 @Bivi藤枝
-
----
+###### 2019/08/24 @Bivi藤枝
 
 ---
 
-### お前誰よ
+---
+
+#### お前誰よ
 
 - Twitter:＠hrs_sano645
 - 普段は家業の自動車金型機械設計の設計以外の何でも屋
@@ -17,7 +17,7 @@
 
 ---
 
-### アンケート
+#### アンケート
 
 1. Python初めて~触って数ヶ月
 2. 入門的書籍を通して終えれてる
@@ -27,28 +27,24 @@
 
 ---
 
-### この中で下3つの方は正直みる必要ないですw
+#### この中で下3つの方は正直みる必要ないですw
 
 ---
 
-### 本日の内容
+#### 本日の内容
 
 - Pythonの開発環境を作ろう
     - Pythonをいい感じで始める為の準備
 - 寄ってたかって教える会
-- LTがあればLTします
+- LTがあればLT大会しましょう
 
 ---
 
-### Pythonの開発環境を作ろう
+#### Pythonの開発環境を作ろう
 
 ---
 
-### ぶっちゃけ誰かこういうまとめをブログかQiitaにあげてほしい
-
----
-
-### 目次
+#### 目次
 
 - Pythonをどう入れるか
 - Pythonを書く環境は？
@@ -56,9 +52,9 @@
 
 ---
 
-### Pythonをどう入れるか
+#### Pythonをどう入れるか
 
-### 各種OS向け
+#### 各種OS向け
 
 - win:公式パッケージ一択
 - Mac: 標準だとpython2系なので、公式パッケージ, Homebrew, MacPortなどのパッケージマネージャー経由
@@ -67,23 +63,21 @@
 
 ---
 
-### 他の手段
+#### 他の手段
 - ソースコードからビルド
     - 公式パッケージは基本的に最新版のみがバイナリしかないので必要なら
     - Python2系は2019/01/01にEOLです
 - docker: [python - Docker Hub](https://hub.docker.com/_/python)
 - anaconda
-    - pythonというか科学分野向けの統合ディストリビューション
-    - こちらを入れた場合は、後ほど出てくるpip->condaが基本です
-    - 正直使ってないので使った方がいればフォローください
+    - pythonというか科学分野向けの統合ディストリビューションaf
 
 ---
 
-### pythonを動かす、書く環境
+#### pythonを動かす、書く環境
 
 ---
 
-### Pythonを動かす環境
+#### Pythonを動かす環境
 
 - CUI(command user interface:コマンドを1回ずつ実行して結果を見る環境）
     - - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
@@ -93,7 +87,7 @@
 
 ---
 
-### CUIで動かす:Win
+#### CUIで動かす:Win
 
 - コマンドプロンプト（cmd）が基本
 - powershell（ps）は使えるらしいけど、自分は使ったことない
@@ -105,7 +99,7 @@
 
 ---
 
-### CUIで動かす:macOS, Linux
+#### CUIで動かす:macOS, Linux
 
 - macOS
 	- 標準のターミナルが一番やりやすい
@@ -115,10 +109,10 @@
 	- cuiならそもそもコマンドを叩けます。
 ---
 
-### スクリプトファイルを書くエディタを用意する
+#### スクリプトファイルを書くエディタを用意する
 ---
 
-### クロスプラットフォーム
+#### クロスプラットフォーム
 
 - VSCode, Atom: WEB系の技術で作られたエディタ(nodejs,electron)  
 利用者多いのとPython開発のサポートや拡張機能があります
@@ -130,46 +124,48 @@
 
 ---
 
-### そのほか
+#### そのほか
 
 - Win
-	- NotePad++
-	- サクラエディタ
+	- [Notepad++](https://notepad-plus-plus.org/)
+	- [サクラエディタ](https://sakura-editor.github.io/)
 - Mac
 	- 基本クロスプラットフォームのものが良さげ
 	- [Coda](https://panic.com/jp/coda/)
 		- [Panic - Nova](https://panic.com/jp/nova/)
 	- [TextMate: Text editor for macOS](https://macromates.com/)
-	- Xcodeはむりだったかな？
+	- Xcodeもできるけどあまり聞かない
 
 ---
 
-### そのほか
+#### そのほか
 
 - Linux:割愛（すみません。。クロスプラットフォーム向けは良い選択肢）
 - Python向けのエディタも沢山あります
-	- そのほかたくさんあるので、気に入ったものを探すと良いです
-    - **linkを用意**
+    - [PythonEditors - Python Wiki](https://wiki.python.org/moin/PythonEditors)
+    - [Collection: Text editors · GitHub](https://github.com/collections/text-editors)
 
 ---
 
-### おまけ:VS Codeでおすすめの拡張機能
+#### おまけ:VS Codeでおすすめの拡張機能
 
 
-- Python for VSCode:
-    - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる（テスト, 静的解析）
+- Python for VSCode: **必ず入れるべき** 
+    - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる（テスト, 静的解析, 自動フォーマットのライブラリもサポート）
+
 ---
 
-### おまけ:VSCodeでおすすめの拡張機能
+#### おまけ:VSCodeでおすすめの拡張機能
 
-- setting sync
-- [TODO Highlight - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync): 設定を別のマシンと同期できる
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight):TODOコメントをハイライトしてくれる
 - markdownのプレビュー系
-- liveshare: ペアプロするのにオススメ
+    - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+- [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack): ペアプロするのにオススメ
 
 ---
 
-### Python for VS Codeで使うとオススメなライブラリ
+#### Python for VS Codeで使うとオススメなライブラリ
 
 Pythonのコードを扱う時間が増えてきたらオススメなライブラリ
 
@@ -180,7 +176,7 @@ Pythonのコードを扱う時間が増えてきたらオススメなライブ�
 
 ---
 
-### まとめ
+#### まとめ
 
 - 試す環境:CUIとか
 - 書く環境:エディタ IDE
@@ -189,22 +185,22 @@ Pythonのコードを扱う時間が増えてきたらオススメなライブ�
 
 ---
 
-### Python環境を作る
+#### Python環境を作る
 
 ---
 
-### 開発をするときは基本的に仮想環境がおすすめ
+#### 開発をするときは基本的に仮想環境がおすすめ
 
 ---
 
-### Why?
+#### Why?
 
 - システムの環境に様々なパッケージを入れることで綺麗でなくなる
 - 開発中はなるべく利用するパッケージを固定にしたい
 
 ---
 
-### 仮想環境の種類
+#### 仮想環境の種類
 
 - ローカルの実行環境:ここを扱う => 仮想実行環境
 - 仮想マシンでOSごと
@@ -214,7 +210,7 @@ Pythonのコードを扱う時間が増えてきたらオススメなライブ�
 
 ---
 
-### Python仮想環境の選択肢
+#### Python仮想環境の選択肢
 
 - Pythonの各バージョン依存
 	- python3のvenv
@@ -226,7 +222,7 @@ Pythonのコードを扱う時間が増えてきたらオススメなライブ�
 
 --- 
 
-### vent
+#### vent
 
 Pythonの実行環境に入る標準の仮想実行環境作成ツール
 
@@ -242,7 +238,7 @@ Mac/Linux: `source .venv/bin/activate`
 
 ---
 
-### pipenv
+#### pipenv
 
 Pypa公式になったpipの依存管理ツール
 
@@ -265,7 +261,7 @@ pipにも requirements.txtがある
 
 ---
 
-### そのほか
+#### そのほか
 
 Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
 
@@ -282,7 +278,7 @@ pyproject.tomlでパッケージ管理、ビルド可能。仮想環境は作る
 
 ---
 
-### おまけ:pyenv
+#### おまけ:pyenv
 
 - pythonの複数バージョンをインストールしやすくする, 管理しやすくするものがコア
 - わかっている人向けで、複数の実行環境が必要な人向け（特に2.7系, 3系の古いもの
@@ -295,7 +291,7 @@ pyenv使い方ミスるといつのまにかわけわからなくなるからお
 
 ---
 
-### まとめ
+#### まとめ
 
 - 基本: venv+pip/requiments.txt
 - 最近の選択肢: Pipenv
@@ -306,12 +302,12 @@ pyenv使い方ミスるといつのまにかわけわからなくなるからお
 
 ---
 
-### 終わり
+#### 終わり
 
 ---
 
 ---
 
-### LT続き
+#### LT続き
 
 ---?include=lt/PITCHME.md
