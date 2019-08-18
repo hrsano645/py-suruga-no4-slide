@@ -91,6 +91,8 @@
     - テキスト形式でコードを書いて実行
     - `python zikkou-sitai-file.py`
 
+---
+
 ### CUIで動かす:Win
 
 - コマンドプロンプト（cmd）が基本
@@ -117,17 +119,18 @@
 ---
 
 ### クロスプラットフォーム
-	- VSCode, Atom: WEB系の技術で作られたエディタ(nodejs,electron)  
-    利用者多いのとPython開発のサポートや拡張機能があります
-		- ほかにもadobe系のBracketsとか
-	- Sublime Text3 （有償）
-	- PyCharm(intellij系): jetbreain社の統合開発環境（IDE） 
-	- vim/emacs: わかる人に聞いてください（サーバー上ならこちらの方が良い場合）
-	- Eclipse + pydev
+
+- VSCode, Atom: WEB系の技術で作られたエディタ(nodejs,electron)  
+利用者多いのとPython開発のサポートや拡張機能があります
+    - ほかにもadobe系のBracketsとか
+- Sublime Text3 （有償）
+- PyCharm(intellij系): jetbreain社の統合開発環境（IDE） 
+- vim/emacs: わかる人に聞いてください（サーバー上ならこちらの方が良い場合）
+- Eclipse + pydev
 
 ---
 
-### ほかOSごと
+### そのほか
 
 - Win
 	- NotePad++
@@ -138,12 +141,18 @@
 		- [Panic - Nova](https://panic.com/jp/nova/)
 	- [TextMate: Text editor for macOS](https://macromates.com/)
 	- Xcodeはむりだったかな？
+
+---
+
+### そのほか
+
 - Linux:割愛（すみません。。クロスプラットフォーム向けは良い選択肢）
 - Python向けのエディタも沢山あります
 	- そのほかたくさんあるので、気に入ったものを探すと良いです
     - **linkを用意**
 
 ---
+
 ### おまけ:VS Codeでおすすめの拡張機能
 
 
@@ -164,10 +173,12 @@
 
 Pythonのコードを扱う時間が増えてきたらオススメなライブラリ
 
-- flake8
+- flake8: 静的メトリクス
 - autopep8(自動フォーマット): black, yapf
-- mypy:  
-- isort: 
+- mypy: 型チェック
+- isort: importの並びを綺麗にする
+
+---
 
 ### まとめ
 
@@ -195,10 +206,11 @@ Pythonのコードを扱う時間が増えてきたらオススメなライブ�
 
 ### 仮想環境の種類
 
-- ユーザーアカウント
 - ローカルの実行環境:ここを扱う => 仮想実行環境
 - 仮想マシンでOSごと
     - コンテナも -> dockerとかも
+- ユーザーアカウント
+    - ユーザーディレクトリにPythonを入れる
 
 ---
 
@@ -250,10 +262,6 @@ pipにも requirements.txtがある
 
 [Pipenv のご紹介 - Google スライド](https://docs.google.com/presentation/d/1tmdB8TpJKcRGk95PoD0Q0jzeMCsBv1EddJ-LVYLj_mY/edit#slide=id.p)
 
-まとめ[これいらないかも]
-
-Pip/requiments.txtだと依存ライブラリの更新管理が面倒（できるけど）
-Pipenvだと、pipfileをいじることで完結する。lock処理が遅い
 
 ---
 
@@ -274,7 +282,7 @@ pyproject.tomlでパッケージ管理、ビルド可能。仮想環境は作る
 
 ---
 
-### pyenv
+### おまけ:pyenv
 
 - pythonの複数バージョンをインストールしやすくする, 管理しやすくするものがコア
 - わかっている人向けで、複数の実行環境が必要な人向け（特に2.7系, 3系の古いもの
@@ -288,6 +296,13 @@ pyenv使い方ミスるといつのまにかわけわからなくなるからお
 ---
 
 ### まとめ
+
+- 基本: venv+pip/requiments.txt
+- 最近の選択肢: Pipenv
+- 第三の選択肢: poetry, flit
+- 普通は使わなくても良い: pyenv
+
+今はそれぞれ選択肢があるイメージ。一先ずvenvの使い方を覚えるのが良いです
 
 ---
 
@@ -451,4 +466,4 @@ Chromebook
 ### iOS13だとよりデスクトップ環境らしくなるのでさらに期待！
 
 - WEB IDEが動く可能性あり, 
-    - VSCode for cloud的なもの
+    - Visual Studio Online
