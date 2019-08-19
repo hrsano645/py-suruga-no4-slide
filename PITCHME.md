@@ -34,7 +34,7 @@
 #### 本日の内容
 
 - Pythonの開発環境を作ろう
-    - Pythonをいい感じで始める為の準備
+  - Pythonをいい感じで始める為の準備
 - 寄ってたかって教える会
 - LTがあればLT大会しましょう
 
@@ -65,11 +65,11 @@
 
 #### 他の手段
 - ソースコードからビルド
-    - 公式パッケージは基本的に最新版のみがバイナリしかないので必要なら
-    - Python2系は2019/01/01にEOLです
+  - 公式パッケージは基本的に最新版のみがバイナリしかないので必要なら
+  - Python2系は2019/01/01にEOLです
 - docker: [python - Docker Hub](https://hub.docker.com/_/python)
 - anaconda
-    - pythonというか科学分野向けの統合ディストリビューションaf
+  - pythonというか科学分野向けの統合ディストリビューションaf
 
 ---
 
@@ -80,10 +80,10 @@
 #### Pythonを動かす環境
 
 - CUI(command user interface:コマンドを1回ずつ実行して結果を見る環境）
-    - - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
+  - - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
 - スクリプトファイル(.py ファイル)
-    - テキスト形式でコードを書いて実行
-    - `python zikkou-sitai-file.py`
+  - テキスト形式でコードを書いて実行
+  - `python zikkou-sitai-file.py`
 
 ---
 
@@ -116,7 +116,7 @@
 
 - VSCode, Atom: WEB系の技術で作られたエディタ(nodejs,electron)  
 利用者多いのとPython開発のサポートや拡張機能があります
-    - ほかにもadobe系のBracketsとか
+  - ほかにもadobe系のBracketsとか
 - Sublime Text3 （有償）
 - PyCharm(intellij系): jetbreain社の統合開発環境（IDE） 
 - vim/emacs: わかる人に聞いてください（サーバー上ならこちらの方が良い場合）
@@ -142,8 +142,8 @@
 
 - Linux:割愛（すみません。。クロスプラットフォーム向けは良い選択肢）
 - Python向けのエディタも沢山あります
-    - [PythonEditors - Python Wiki](https://wiki.python.org/moin/PythonEditors)
-    - [Collection: Text editors · GitHub](https://github.com/collections/text-editors)
+  - [PythonEditors - Python Wiki](https://wiki.python.org/moin/PythonEditors)
+  - [Collection: Text editors · GitHub](https://github.com/collections/text-editors)
 
 ---
 
@@ -151,7 +151,7 @@
 
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python): **必ず入れるべき** 
-    - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる（テスト, 静的解析, 自動フォーマットのライブラリもサポート）
+  - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる（テスト, 静的解析, 自動フォーマットのライブラリもサポート）
 
 ---
 
@@ -160,7 +160,7 @@
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync): 設定を別のマシンと同期できる
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight):TODOコメントをハイライトしてくれる
 - markdownのプレビュー系
-    - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+  - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 - [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack): ペアプロするのにオススメ
 
 ---
@@ -171,9 +171,9 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 - [リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
 - [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
-- 型チェック: mypy
+- 型チェック: mypy -> [vscodeでの解説](https://code.visualstudio.com/docs/python/linting#_mypy)
 - そのほか
-    - isort: importの並びを綺麗にする -> [vscodeでの解説](https://code.visualstudio.com/docs/python/editing#_sort-imports)
+  - isort: importの並びを綺麗にする -> [vscodeでの解説](https://code.visualstudio.com/docs/python/editing#_sort-imports)
 
 参考:[Python 3.7とVisual Studio Codeで型チェックが捗る内作Pythonアプリケーション開発環境の構築 - Qiita](https://qiita.com/shibukawa/items/1650724daf117fad6ccd#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AE%E6%84%8F%E5%91%B3)
 
@@ -207,37 +207,36 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 - ローカルの実行環境:ここを扱う => 仮想実行環境
 - 仮想マシンでOSごと
-    - コンテナも -> dockerとかも
+  - コンテナも -> dockerとかも
 - ユーザーアカウント
-    - ユーザーディレクトリにPythonを入れる
+  - ユーザーディレクトリにPythonを入れる
 
 ---
 
 #### Python仮想環境の選択肢
 
 - Pythonの各バージョン依存
-	- python3のvenv
+	- python3 venv + pipのrrequirements.txt
 - 複数バージョン
 	- pipenv:依存問題に対処しやすい
 	- virtualeenv:pipenvでも使われてる
 - その他
-	- flit, poetry, pyenv
+	- poetry, flit, pyenv
 
 --- 
 
-#### vent
+#### venv
 
 Pythonの実行環境に入る標準の仮想実行環境作成ツール
 
-`python -m vena .venv` で実行時のディレクトリに仮想実行環境を作成
+- `python -m venv .venv` で実行時のディレクトリに仮想実行環境を作成
+  - Win: `.venv¥Scripts¥activate.bat`
+  - Mac/Linux: `source .venv/bin/activate`
+- 仮想環境から抜けるとき: `deactivate`
 
-Win: `.venv¥Scripts¥activate.bat`
+---
 
-Mac/Linux: `source .venv/bin/activate`
-
- にて仮想実行環境に入る
-
-抜けるとき: `deactivate`
+#### ****
 
 ---
 
@@ -264,7 +263,7 @@ pipにも requirements.txtがある
 
 ---
 
-#### そのほか
+#### poetry
 
 Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
 
@@ -273,7 +272,9 @@ Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
 
 パッケージ作成者ならこちらが使いやすいラシイ
 
-Flit
+----
+
+#### flit
 
 pyproject.tomlでパッケージ管理、ビルド可能。仮想環境は作る必要がある
 
@@ -286,17 +287,12 @@ pyproject.tomlでパッケージ管理、ビルド可能。仮想環境は作る
 - pythonの複数バージョンをインストールしやすくする, 管理しやすくするものがコア
 - わかっている人向けで、複数の実行環境が必要な人向け（特に2.7系, 3系の古いもの
 - 今後必要になるかは不明（特に2.7系は来年1/1にEOLです, 3.5まではEOLです）
-- そもそもWinで使えない
-
----
-pyenv使い方ミスるといつのまにかわけわからなくなるからおススメしません！
-（3.7つかってるとおもったら3.5を入れてたり、pyenv側のコマンド使わない方が安全かもしれない）
 
 ---
 
 #### まとめ
 
-- 基本: venv+pip/requiments.txt
+- 基本: venv+pip/rrequirements.txt
 - 最近の選択肢: Pipenv
 - 第三の選択肢: poetry, flit
 - 普通は使わなくても良い: pyenv
