@@ -66,9 +66,12 @@
 #### 各種OS向け
 
 - win:公式パッケージ一択
-- Mac: 標準だとpython2系なので、公式パッケージ, Homebrew, MacPortなどのパッケージマネージャー経由
-- linux: デフォで入ってるし、いくつかのバージョンはLinuxのパッケージマネージャー(apt/yum などなど)経由でインストール可能
+- Mac: 標準だとpython2系なので、公式パッケージ
+  - Homebrew, MacPortなどのパッケージマネージャー経由
+- linux: 標準でインストール済み
+  - いくつかのバージョンはLinuxのパッケージマネージャー(apt/yum などなど)経由でインストール可能
 
+Win,Macは基本公式パッケージ
 
 ---
 
@@ -102,8 +105,8 @@
 - powershell（ps）は使えるらしいけど、自分は使ったことない
 - WSL(Windows Subsystem for Linux) はWinの公式のインストーラーのものではなくLinux側の扱いになるので注意
 - ターミナルアプリケーションの存在
-	- hyper
-	- windows terminal:MS公式のターミナルアプリ cmd, psやwslを一つの画面上で同時に利用できる
+  - hyper
+  - windows terminal:MS公式のターミナルアプリ cmd, psやwslを一つの画面上で同時に利用できる
 - そのほか cygwinとかmsys2とか色々ありますが割愛！
 
 ---
@@ -111,11 +114,11 @@
 #### CUIで動かす:macOS, Linux
 
 - macOS
-	- 標準のターミナルが一番やりやすい
-	- iterm2という高機能なターミナルもおすすめ
+  - 標準のターミナルが一番やりやすい
+  - iterm2という高機能なターミナルもおすすめ
 - LInux
-	- デスクトップ環境がある場合はその環境のターミナル(gnome terminal, lxterminal, などなど）
-	- cuiならそもそもコマンドを叩けます。
+  - デスクトップ環境がある場合はその環境のターミナル(gnome terminal, lxterminal, などなど）
+  - cuiならそもそもコマンドを叩けます。
 ---
 
 #### スクリプトファイルを書くエディタを用意する
@@ -136,14 +139,14 @@
 #### そのほか
 
 - Win
-	- [Notepad++](https://notepad-plus-plus.org/)
-	- [サクラエディタ](https://sakura-editor.github.io/)
+  - [Notepad++](https://notepad-plus-plus.org/)
+  - [サクラエディタ](https://sakura-editor.github.io/)
 - Mac
-	- 基本クロスプラットフォームのものが良さげ
-	- [Coda](https://panic.com/jp/coda/)
-		- [Panic - Nova](https://panic.com/jp/nova/)
-	- [TextMate: Text editor for macOS](https://macromates.com/)
-	- Xcodeもできるけどあまり聞かない
+  - 基本クロスプラットフォームのものが良さげ
+  - [Coda](https://panic.com/jp/coda/)
+    - [Panic - Nova](https://panic.com/jp/nova/)
+  - [TextMate: Text editor for macOS](https://macromates.com/)
+  - Xcodeもできるけどあまり聞かない
 
 ---
 
@@ -233,12 +236,12 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 #### Python仮想環境の選択肢
 
 - Pythonの各バージョン依存
-	- python3 venv + pipのrrequirements.txt
+  - python3 venv + pipのrrequirements.txt
 - 複数バージョン
-	- pipenv:依存問題に対処しやすい
-	- virtualeenv:pipenvでも使われてる
+  - pipenv:依存問題に対処しやすい
+  - virtualeenv:pipenvでも使われてる
 - その他
-	- poetry, flit, pyenv
+  - poetry, flit, pyenv
 
 --- 
 
