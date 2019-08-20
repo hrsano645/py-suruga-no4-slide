@@ -298,8 +298,8 @@ Pypa公式になったpipの依存管理ツール
 
 #### pipenvの使い方例
 
-- `pipenv --python 3.7`: pythonのバージョン指定して仮想環境作成
-- `pipenv install`: Pipfileを作成、ライブラリ管理に使う
+- `pipenv --python 3.7`: Pipfileを作成、pythonのバージョン指定して仮想環境作成
+- `pipenv install`: ライブラリ管理に使う
 - `pipenv shell`:  仮想環境に移動
 - `pipenv run python example.py` : example.pyをpipenvの環境で実行する
 
