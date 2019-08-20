@@ -79,7 +79,7 @@ Win,Macは基本公式パッケージ
 #### 他の手段
 - ソースコードからビルド
   - 公式パッケージは基本的に最新版のみがバイナリしかないので必要なら
-  - Python2系は2019/01/01にEOLです😇
+  - Python2系は2020/01/01にEOLです😇
 - docker: [python - Docker Hub](https://hub.docker.com/_/python)
 - anaconda
   - pythonというか科学分野向けの統合ディストリビューション
@@ -223,11 +223,12 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 - 開発中はなるべく利用するパッケージを固定にしたい
 
 ---
+
 ### 依存管理ツールとは？
 
 開発中にライブラリのバージョンを固定するメリット
 
-- 同じ環境で開発し続けれる
+- 同じ環境で開発し続けれる（別のPCで同じライブラリを入れやすい）
 - 計画的な依存ライブラリのバージョンアップができる
 
 ---
@@ -244,7 +245,9 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 #### Python仮想環境の選択肢
 
-基本はvenvでより開発が進む/チームで開発ならpipenv, poetry/flit など
+基本はvenv
+
+開発が進む/チームで開発ならpipenv, poetry/flit など
 
 - Pythonの各バージョン依存
   - python3 venv + pipのrrequirements.txt
@@ -259,6 +262,8 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 Pythonの実行環境に入る標準の仮想実行環境作成ツール
 
+- `mkdir projname & cd projname`
+  - プロジェクトフォルダを作って移動する
 - `python -m venv .venv` で実行時のディレクトリに仮想実行環境を作成
 - activateコマンドで仮想環境へ切り替え
   - Win: `.venv¥Scripts¥activate.bat`
@@ -272,6 +277,10 @@ Pythonの実行環境に入る標準の仮想実行環境作成ツール
 pipでインストールしたライブラリのバージョンを固定する
 
 `pip freeze > requirements.txt`
+
+別の開発環境で同じライブラリのバージョンをインストール
+
+`pip install -r requirements.txt` 
 
 ---
 
@@ -289,10 +298,8 @@ Pypa公式になったpipの依存管理ツール
 
 #### pipenvの使い方例
 
-Pipfileがある場所でコマンドを実行します 
-
 - `pipenv --python 3.7`: pythonのバージョン指定して仮想環境作成
-- `pipenv install`: Pipfileを作成
+- `pipenv install`: Pipfileを作成、ライブラリ管理に使う
 - `pipenv shell`:  仮想環境に移動
 - `pipenv run python example.py` : example.pyをpipenvの環境で実行する
 
@@ -328,7 +335,7 @@ pyenvは普段は使わない/ただ入れるのはオススメしないです
 
 #### まとめ
 
-- 基本: venv+pip/rrequirements.txt
+- 基本: venv+pip/requirements.txt
 - 最近の選択肢: Pipenv
 - 第三の選択肢: poetry, flit
 - 普通は使わなくても良い: pyenv
