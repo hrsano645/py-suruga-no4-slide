@@ -93,7 +93,8 @@ Win,Macは基本公式パッケージ
 
 - CUI(command user interface:コマンドを1回ずつ実行して結果を見る環境）
   - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
-  - `>>> print("hellp Python Suruga")` <- これができる環境
+  - `>>> print("hello Python Suruga")`
+  - ↑これができる環境
 - スクリプトファイル(.py ファイル)
   - テキスト形式でコードを書いて実行
   - `python zikkou-sitai-file.py`
@@ -199,6 +200,12 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 ---
 
+#### 扱わなかったこと
+
+- コードの履歴管理(gitなどのVCS)
+- テスト環境(unittest, pytest)
+- プロジェクト管理(githubなど）
+
 ---
 
 #### Python環境を作る
@@ -294,21 +301,23 @@ Pipfileがある場所でコマンドを実行します
 
 Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
 
-利用パッケージの依存関係の管理に加えて、パッケージ作成をするときのファイル(setup.pyなど)も生成してくれる。
+利用パッケージの依存関係の管理に加えて、PyPI向けパッケージ作成をするときのファイル(setup.pyなど)も生成
 
-パッケージ作成者ならこちらが使いやすいらしい（個人の感想）
+パッケージ作成者ならこちらが使いやすいと思う（個人の感想です。）
 
 ---
 
 #### flit
 
-pyproject.tomlでパッケージ管理、ビルド可能。仮想環境は作る必要がある
+pyproject.tomlでパッケージ管理、pypi向けにビルド可能。仮想環境は作る必要がある
 
 [takluyver/flit: Simplified packaging of Python modules](https://github.com/takluyver/flit)
 
 ---
 
 #### おまけ:pyenv
+
+pyenvは普段は使わない/ただ入れるのはオススメしないです
 
 - pythonの複数バージョンをインストールしやすくする, 管理しやすくするものがコア
 - わかっている人向けで、複数の実行環境が必要な人向け（特に2.7系, 3系の古いもの
