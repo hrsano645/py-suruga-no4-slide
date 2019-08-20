@@ -93,7 +93,7 @@ Win,Macは基本公式パッケージ
 
 - CUI(command user interface:コマンドを1回ずつ実行して結果を見る環境）
   - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
-  `>>> print("hellp Python Suruga")` <- これができる環境
+  - `>>> print("hellp Python Suruga")` <- これができる環境
 - スクリプトファイル(.py ファイル)
   - テキスト形式でコードを書いて実行
   - `python zikkou-sitai-file.py`
@@ -130,10 +130,9 @@ Win,Macは基本公式パッケージ
 
 - VSCode, Atom: WEB系の技術で作られたエディタ(nodejs,electron)  
 利用者多いのとPython開発のサポートや拡張機能があります
-  - ほかにもadobe系のBracketsとか
 - Sublime Text3 （有償）
 - PyCharm(intellij系): jetbreain社の統合開発環境（IDE） 
-- vim/emacs: わかる人に聞いてください（サーバー上ならこちらの方が良い場合）
+- vim/emacs: わかる人に聞いてください
 - Eclipse + pydev
 
 ---
@@ -164,17 +163,18 @@ Win,Macは基本公式パッケージ
 #### おまけ:VSCodeでおすすめの拡張機能
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python): **必ず入れるべき** 
-  - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる（テスト, 静的解析, 自動フォーマットのライブラリもサポート）
+  - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる
+  - （テスト, 静的解析, 自動フォーマットのライブラリもサポート）
 
 ---
 
 #### おまけ:VSCodeでおすすめの拡張機能
 
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync): 設定を別のマシンと同期できる
-- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight):TODOコメントをハイライトしてくれる
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight):TODOコメントをハイライトする
 - markdownのプレビュー系
   - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack): ペアプロするのにオススメ
+- [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack): ペアプロにオススメ
 
 ---
 
@@ -184,9 +184,9 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 - [リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
 - [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
-- 型チェック: mypy -> [vscodeでの解説](https://code.visualstudio.com/docs/python/linting#_mypy)
+- 型チェック: [mypy](https://code.visualstudio.com/docs/python/linting#_mypy)
 - そのほか
-  - isort: importの並びを綺麗にする -> [vscodeでの解説](https://code.visualstudio.com/docs/python/editing#_sort-imports)
+  - [isort](https://code.visualstudio.com/docs/python/editing#_sort-imports: importの並びを綺麗に
 
 参考:[Python 3.7とVisual Studio Codeで型チェックが捗る内作Pythonアプリケーション開発環境の構築 - Qiita](https://qiita.com/shibukawa/items/1650724daf117fad6ccd#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AE%E6%84%8F%E5%91%B3)
 
@@ -194,8 +194,8 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 #### まとめ
 
-- 試す環境:CUIで動かす
-- 書く環境:エディタ IDEでスクリプトを書こう
+- 試す環境:CUIで動かそう
+- 書く環境:エディタやIDEでスクリプトを書こう
 
 ---
 
@@ -217,7 +217,7 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 ---
 ### 依存管理ツールとは？
 
-開発中にバージョンを固定してやりたい。
+開発中にライブラリのバージョンを固定するメリット
 
 - 同じ環境で開発し続けれる
 - 計画的な依存ライブラリのバージョンアップができる
@@ -227,20 +227,21 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 #### 仮想環境の種類
 
 - ローカルの実行環境:ここを扱う => 仮想実行環境
-- 仮想マシンでOSごと
-  - コンテナも -> dockerとかも
+- 仮想マシンでOSごと仮想化
+  - コンテナ、dockerも
 - ユーザーアカウント
-  - ユーザーディレクトリにPythonを入れる
+  - ユーザーディレクトリにPythonを入れたり
 
 ---
 
 #### Python仮想環境の選択肢
 
+基本はvenvでより開発が進む/チームで開発ならpipenv, poetry/flit など
+
 - Pythonの各バージョン依存
   - python3 venv + pipのrrequirements.txt
 - 複数バージョン
   - pipenv:依存問題に対処しやすい
-  - virtualeenv:pipenvでも使われてる
 - その他
   - poetry, flit, pyenv
 
@@ -251,9 +252,10 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 Pythonの実行環境に入る標準の仮想実行環境作成ツール
 
 - `python -m venv .venv` で実行時のディレクトリに仮想実行環境を作成
+- activateコマンドで仮想環境へ切り替え
   - Win: `.venv¥Scripts¥activate.bat`
   - Mac/Linux: `source .venv/bin/activate`
-- 仮想環境から抜けるとき: `deactivate`
+- `deactivate` コマンドで仮想環境から抜ける
 
 ---
 
@@ -262,7 +264,6 @@ Pythonの実行環境に入る標準の仮想実行環境作成ツール
 pipでインストールしたライブラリのバージョンを固定する
 
 `pip freeze > requirements.txt`
-
 
 ---
 
@@ -280,10 +281,12 @@ Pypa公式になったpipの依存管理ツール
 
 #### pipenvの使い方例
 
+Pipfileがある場所でコマンドを実行します 
+
 - `pipenv --python 3.7`: pythonのバージョン指定して仮想環境作成
 - `pipenv install`: Pipfileを作成
 - `pipenv shell`:  仮想環境に移動
-- `pipenv run` :
+- `pipenv run python example.py` : example.pyをpipenvの環境で実行する
 
 ---
 
