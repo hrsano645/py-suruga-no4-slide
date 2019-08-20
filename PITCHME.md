@@ -186,7 +186,7 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 - [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
 - 型チェック: [mypy](https://code.visualstudio.com/docs/python/linting#_mypy)
 - そのほか
-  - [isort](https://code.visualstudio.com/docs/python/editing#_sort-imports: importの並びを綺麗に
+  - [isort](https://code.visualstudio.com/docs/python/editing#_sort-imports): importの並びを綺麗に
 
 参考:[Python 3.7とVisual Studio Codeで型チェックが捗る内作Pythonアプリケーション開発環境の構築 - Qiita](https://qiita.com/shibukawa/items/1650724daf117fad6ccd#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AE%E6%84%8F%E5%91%B3)
 
