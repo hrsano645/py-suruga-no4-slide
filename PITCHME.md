@@ -296,6 +296,7 @@ pip freeze > requirements.txt
 # 別の開発環境で同じライブラリのバージョンをインストール
 pip install -r requirements.txt
 ```
+
 ---
 
 ### pipenv
@@ -305,7 +306,6 @@ Pypa公式になったpipの依存管理ツール
 [pypa/pipenv](https://github.com/pypa/pipenv)
 
 - 素晴らしい解説 ~~丸投げ~~ 
-
   - [Pipfile/Pipfile.lockの必要性 -requirements.txtを用いる手法と比較して- - Qiita](https://qiita.com/miyashiiii/items/92e6f745a940c4df2ddd)
   - [Pipenv のご紹介 - Google スライド](https://docs.google.com/presentation/d/1tmdB8TpJKcRGk95PoD0Q0jzeMCsBv1EddJ-LVYLj_mY/edit#slide=id.p)
 
