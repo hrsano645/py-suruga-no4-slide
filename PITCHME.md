@@ -222,7 +222,7 @@ VSCodeでサポートされてます
 
 ---
 
-### 開発をするときは基本的に仮想環境がおすすめ
+### 開発をするときは基本的に仮想実行環境がおすすめ
 
 ---
 
@@ -242,9 +242,9 @@ VSCodeでサポートされてます
 
 ---
 
-### 仮想環境の種類
+### 仮想実行環境の種類
 
-- ローカルの実行環境:ここを扱う => 仮想実行環境
+- **ローカルの実行環境で仮想実行環境**
 - 仮想マシンでOSごと仮想化
   - コンテナ、dockerも
 - ユーザーアカウント
@@ -252,24 +252,22 @@ VSCodeでサポートされてます
 
 ---
 
-### Python仮想環境の選択肢
+### Python仮想実行環境の選択肢
 
 基本はvenv
 
-開発が進む/チームで開発ならpipenv, poetry/flit など
-
-- Pythonの各バージョン依存
+- 最初の選択肢
   - python3 venv + pipのrrequirements.txt
-- 複数バージョン
+- 最近の選択肢
   - pipenv: 依存管理をしやすく
-- その他
-  - poetry, flit, pyenv
+- 第3の選択肢
+  - poetry, flit
 
 --- 
 
 ### venv
 
-Pythonの実行環境に入る標準の仮想実行環境作成ツール
+Python標準の仮想実行環境作成ツール
 
 ```sh
 # プロジェクトフォルダを作って移動する
@@ -304,11 +302,12 @@ pip install -r requirements.txt
 
 Pypa公式になったpipの依存管理ツール
 
-[Pipfile/Pipfile.lockの必要性 -requirements.txtを用いる手法と比較して- - Qiita](https://qiita.com/miyashiiii/items/92e6f745a940c4df2ddd)
+[pypa/pipenv](https://github.com/pypa/pipenv)
 
-ぶっちゃけこちらが素晴らしい解説だったので ~~丸投げ~~ 参照
+- 素晴らしい解説 ~~丸投げ~~ 
 
-[Pipenv のご紹介 - Google スライド](https://docs.google.com/presentation/d/1tmdB8TpJKcRGk95PoD0Q0jzeMCsBv1EddJ-LVYLj_mY/edit#slide=id.p)
+  - [Pipfile/Pipfile.lockの必要性 -requirements.txtを用いる手法と比較して- - Qiita](https://qiita.com/miyashiiii/items/92e6f745a940c4df2ddd)
+  - [Pipenv のご紹介 - Google スライド](https://docs.google.com/presentation/d/1tmdB8TpJKcRGk95PoD0Q0jzeMCsBv1EddJ-LVYLj_mY/edit#slide=id.p)
 
 ---
 
