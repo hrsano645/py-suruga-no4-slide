@@ -136,10 +136,10 @@ python zikkou-sitai-file.py
 
 #### クロスプラットフォーム
 
-- VSCode, Atom: WEB系の技術で作られたエディタ(nodejs,electron)  
-利用者多いのとPython開発のサポートや拡張機能があります
+- nodejs,electron: WEB系の技術で作られたエディタ
+  - VSCode, Atom
 - Sublime Text3 （有償）
-- PyCharm(intellij系): jetbreain社の統合開発環境（IDE） 
+- PyCharm(intellij系): jetbrain社の統合開発環境（IDE） 
 - vim/emacs: わかる人に聞いてください
 - Eclipse + pydev
 
@@ -152,8 +152,7 @@ python zikkou-sitai-file.py
   - [サクラエディタ](https://sakura-editor.github.io/)
 - Mac
   - 基本クロスプラットフォームのものが良さげ
-  - [Coda](https://panic.com/jp/coda/)
-    - [Panic - Nova](https://panic.com/jp/nova/)
+  - [Panic - Coda](https://panic.com/jp/coda/)
   - [TextMate: Text editor for macOS](https://macromates.com/)
   - Xcodeもできるけどあまり聞かない
 
@@ -186,9 +185,11 @@ python zikkou-sitai-file.py
 
 ---
 
-#### Python拡張で使うとオススメなライブラリ
+#### VSCodeのPython拡張で使うとオススメなライブラリ
 
-Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeでサポートされてます。
+Pythonのコードを扱う時間が増えてきたらオススメ。
+
+VSCodeでサポートされてます。
 
 - [リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
 - [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
@@ -196,7 +197,7 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 - そのほか
   - [isort](https://code.visualstudio.com/docs/python/editing#_sort-imports): importの並びを綺麗に
 
-参考:[Python 3.7とVisual Studio Codeで型チェックが捗る内作Pythonアプリケーション開発環境の構築 - Qiita](https://qiita.com/shibukawa/items/1650724daf117fad6ccd#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AE%E6%84%8F%E5%91%B3)
+参考:[Python 3.7とVisual Studio Codeで型チェックが捗る内作Pythonアプリケーション開発環境の構築](https://qiita.com/shibukawa/items/1650724daf117fad6ccd#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AE%E6%84%8F%E5%91%B3)
 
 ---
 
@@ -245,7 +246,7 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 - 仮想マシンでOSごと仮想化
   - コンテナ、dockerも
 - ユーザーアカウント
-  - ユーザーディレクトリにPythonを入れたり
+  - ユーザーディレクトリにPythonを入れる
 
 ---
 
@@ -258,7 +259,7 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 - Pythonの各バージョン依存
   - python3 venv + pipのrrequirements.txt
 - 複数バージョン
-  - pipenv:依存問題に対処しやすい
+  - pipenv: 依存管理をしやすく
 - その他
   - poetry, flit, pyenv
 
