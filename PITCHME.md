@@ -359,6 +359,6 @@ pyenvは普段は使わない/ただ入れるのはオススメしないです
 - 基本: venv+pip/requirements.txt
 - 最近の選択肢: Pipenv
 - 第三の選択肢: poetry, flit
-- 普通は使わなくても良い: pyenv
 
-一先ずvenvの使い方を覚えるのが良いです
+pipenv, poetry,flitは新しいツールなので、これから変わることも多そう
+基本的にはvenvの使い方を覚えるのが良いです
