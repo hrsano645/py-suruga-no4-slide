@@ -64,6 +64,8 @@
 
 ### Pythonをどう入れるか
 
+---
+
 ### 各種OS向け
 
 - win:公式パッケージ一択
@@ -167,7 +169,7 @@ python zikkou-sitai-file.py
 
 ---
 
-### おまけ:VSCodeでおすすめの拡張機能
+### おまけ:VSCodeおすすめ拡張機能
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python): **必ず入れるべき** 
   - MS公式提供の拡張機能。コード補完やデバッグ, 開発で利用するパッケージを統合サポートしてくれる
@@ -175,7 +177,7 @@ python zikkou-sitai-file.py
 
 ---
 
-### おまけ:VSCodeでおすすめの拡張機能
+### おまけ:VSCodeおすすめ拡張機能
 
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync): 設定を別のマシンと同期できる
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight):TODOコメントをハイライトする
@@ -185,11 +187,11 @@ python zikkou-sitai-file.py
 
 ---
 
-### VSCodeのPython拡張で使うとオススメなライブラリ
+### VSCodeのPython拡張で使えるもの
 
-Pythonのコードを扱う時間が増えてきたらオススメ。
+Pythonを扱う時間が増えたらオススメ
 
-VSCodeでサポートされてます。
+VSCodeでサポートされてます
 
 - [リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
 - [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
@@ -335,7 +337,7 @@ Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
 
 pyproject.tomlでパッケージ管理、pypi向けにビルド可能。仮想環境は作る必要がある
 
-[takluyver/flit: Simplified packaging of Python modules](https://github.com/takluyver/flit)
+[takluyver/flit](https://github.com/takluyver/flit)
 
 ---
 
@@ -344,8 +346,9 @@ pyproject.tomlでパッケージ管理、pypi向けにビルド可能。仮想�
 pyenvは普段は使わない/ただ入れるのはオススメしないです
 
 - pythonの複数バージョンをインストールしやすくする, 管理しやすくするものがコア
-- わかっている人向けで、複数の実行環境が必要な人向け（特に2.7系, 3系の古いもの
-- 今後必要になるかは不明（特に2.7系は来年1/1にEOLです, 3.5まではEOLです）
+- 複数の実行環境が必要な人向け（特に2.7系, 3系の古いもの
+- 今後必要になるかは不明
+  - （特に2.7系は来年1/1にEOLです, 3.5まではEOLです）
 
 ---
 
