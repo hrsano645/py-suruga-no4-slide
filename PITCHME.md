@@ -94,11 +94,17 @@ Win,Macは基本公式パッケージ
 
 - CUI(command user interface:コマンドを1回ずつ実行して結果を見る環境）
   - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
-  - `>>> print("hello Python Suruga")`
-  - ↑これができる環境
+
+```
+>>> print("hello Python Suruga")
+```
+
 - スクリプトファイル(.py ファイル)
   - テキスト形式でコードを書いて実行
-  - `python zikkou-sitai-file.py`
+
+```
+python zikkou-sitai-file.py
+```
 
 ---
 
@@ -340,5 +346,4 @@ pyenvは普段は使わない/ただ入れるのはオススメしないです
 - 第三の選択肢: poetry, flit
 - 普通は使わなくても良い: pyenv
 
-今はそれぞれ選択肢があるイメージ。一先ずvenvの使い方を覚えるのが良いです
-
+一先ずvenvの使い方を覚えるのが良いです
