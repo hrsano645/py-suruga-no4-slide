@@ -339,7 +339,7 @@ pipenv run python example.py # example.pyをpipenvの環境で実行する
 
 [takluyver/flit](https://github.com/takluyver/flit)
 
-- pyproject.tomlでパッケージ管理、pypi向けにビルド可能
+- パッケージ管理、PyPI向けにビルド可能
 - 仮想環境は作る必要がある
 
 ---
