@@ -95,14 +95,14 @@ Win,Macは基本公式パッケージ
 - CUI(command user interface:コマンドを1回ずつ実行して結果を見る環境）
   - Pythonの1行ごと実行できる対話インターフェイスをつかう（REPL）
 
-```
+```sh
 >>> print("hello Python Suruga")
 ```
 
 - スクリプトファイル(.py ファイル)
   - テキスト形式でコードを書いて実行
 
-```
+```sh
 python zikkou-sitai-file.py
 ```
 
@@ -268,26 +268,33 @@ Pythonのコードを扱う時間が増えてきたらオススメ。VSCodeで�
 
 Pythonの実行環境に入る標準の仮想実行環境作成ツール
 
-- `mkdir projname & cd projname`
-  - プロジェクトフォルダを作って移動する
-- `python -m venv .venv` で実行時のディレクトリに仮想実行環境を作成
-- activateコマンドで仮想環境へ切り替え
-  - Win: `.venv¥Scripts¥activate.bat`
-  - Mac/Linux: `source .venv/bin/activate`
-- `deactivate` コマンドで仮想環境から抜ける
+```sh
+# プロジェクトフォルダを作って移動する
+mkdir projname & cd projname
+
+# 実行時のディレクトリに仮想実行環境を作成
+python -m venv .venv
+
+# activateコマンドで仮想環境へ切り替え
+.venv¥Scripts¥activate.bat #Win
+source .venv/bin/activate # Mac/Linux
+
+# コマンドで仮想環境から抜ける
+deactivate
+```
 
 ---
 
 #### venv:pip+requirements.txt
 
-pipでインストールしたライブラリのバージョンを固定する
 
-`pip freeze > requirements.txt`
+```sh
+# pipでインストールしたライブラリのバージョンを固定する
+pip freeze > requirements.txt
 
-別の開発環境で同じライブラリのバージョンをインストール
-
-`pip install -r requirements.txt` 
-
+# 別の開発環境で同じライブラリのバージョンをインストール
+pip install -r requirements.txt
+```
 ---
 
 #### pipenv
@@ -304,10 +311,12 @@ Pypa公式になったpipの依存管理ツール
 
 #### pipenvの使い方例
 
-- `pipenv --python 3.7`: Pipfileを作成、pythonのバージョン指定して仮想環境作成
-- `pipenv install`: ライブラリ管理に使う
-- `pipenv shell`:  仮想環境に移動
-- `pipenv run python example.py` : example.pyをpipenvの環境で実行する
+```sh
+pipenv --python 3.7 # Pipfileを作成、pythonのバージョン指定して仮想環境作成
+pipenv install # ライブラリ管理に使う
+pipenv shell # 仮想環境に移動
+pipenv run python example.py # example.pyをpipenvの環境で実行する
+```
 
 ---
 
