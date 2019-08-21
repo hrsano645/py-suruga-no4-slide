@@ -193,7 +193,7 @@ Pythonを扱う時間が増えたらオススメ
 
 VSCodeでサポートされてます
 
-- [リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
+- [静的解析/リンター](https://code.visualstudio.com/docs/python/linting#_general-linting-settings): flake8, pylint
 - [自動フォーマット](hhttps://code.visualstudio.com/docs/python/editing#_formatting): black, yapf, autopep8
 - 型チェック: [mypy](https://code.visualstudio.com/docs/python/linting#_mypy)
 - そのほか
