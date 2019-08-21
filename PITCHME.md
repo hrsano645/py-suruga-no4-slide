@@ -325,9 +325,11 @@ pipenv run python example.py # example.pyをpipenvの環境で実行する
 
 ### poetry
 
-Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
+[sdispater/poetry](https://github.com/sdispater/poetry)
 
-利用パッケージの依存関係の管理に加えて、PyPI向けパッケージ作成をするときのファイル(setup.pyなど)も生成
+- venv, pipenvのように仮想環境作成
+- 利用パッケージの依存関係の管理に加えて
+- PyPI向けパッケージ作成をするときのファイル(setup.pyなど)も生成
 
 パッケージ作成者ならこちらが使いやすいと思う（個人の感想です。）
 
@@ -335,9 +337,10 @@ Poetry: [sdispater/poetry](https://github.com/sdispater/poetry)
 
 ### flit
 
-pyproject.tomlでパッケージ管理、pypi向けにビルド可能。仮想環境は作る必要がある
-
 [takluyver/flit](https://github.com/takluyver/flit)
+
+- pyproject.tomlでパッケージ管理、pypi向けにビルド可能
+- 仮想環境は作る必要がある
 
 ---
 
